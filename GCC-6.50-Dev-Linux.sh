@@ -97,7 +97,7 @@ make libdebug PREFIX=$PREFIX >>$LOGFILES/part4.log 2>>$LOGFILES/part4_err.log
 
 # Build Assembler (vasm)
 cd $ARCHIVES/vasm
-tar -xzf vasm.tar.tar
+tar -xzf vasm2_0g-daily-20260903.tar.gz
 cd vasm
 make CPU=m68k SYNTAX=mot >>$LOGFILES/vasm.log 2>>$LOGFILES/vasm_err.log
 cp -f vasmm68k_mot $PREFIX/bin/vasmm68k_mot >>$LOGFILES/vasm.log 2>>$LOGFILES/vasm_err.log
